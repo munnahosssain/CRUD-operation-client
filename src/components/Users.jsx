@@ -10,7 +10,7 @@ const Users = () => {
   const [users, setUsers] = useState(loadedUsers);
 
   const handleDeleteUser = _id => {
-    fetch(`http://localhost:5000/users/${_id}`, {
+    fetch(`https://crud-operations-g5sb.onrender.com/users/${_id}`, {
       method: "DELETE",
       headers: {},
       body: "",

@@ -15,7 +15,7 @@ const Update = () => {
     const email = form.email.value;
     const user = { name, email };
 
-    fetch(`http://localhost:5000/users/${loadedUser._id}`, {
+    fetch(`https://crud-operations-g5sb.onrender.com/users/${loadedUser._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

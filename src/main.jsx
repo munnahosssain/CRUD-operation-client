@@ -17,12 +17,13 @@ const router = createBrowserRouter([
   {
     path: "/users",
     element: <Users />,
-    loader: () => fetch("http://localhost:5000/users"),
+    loader: () => fetch("https://crud-operations-g5sb.onrender.com/users"),
   },
   {
     path: "/update/:id",
     element: <Update />,
-    loader: ({ params }) => fetch(`http://localhost:5000/users/${params.id}`),
+    loader: ({ params }) =>
+      fetch(`https://crud-operations-g5sb.onrender.com/users/${params.id}`),
   },
 ]);
 
